@@ -12,7 +12,7 @@ public class Grid {
 	Random random = new Random();
 	
 	final String letters = "ABCDEFGHIJKLMNOPQRSTUVWYXZ";
-	final int N = letters.length();
+	final int n = letters.length();
 	
 	String letter;
 	
@@ -24,7 +24,7 @@ public class Grid {
 	
 				StringBuilder sb = new StringBuilder(1);
 				
-				sb.append(letters.charAt(random.nextInt(N)));
+				sb.append(letters.charAt(random.nextInt(n)));
 								
 				letter = sb.toString();
 		
@@ -60,6 +60,29 @@ public class Grid {
 		game = words.words1();
 		
 		//ADICIONAR PALAVRAS AO GRID
+		
+		/*
+		 * Definir se a palavra ficará na vertical ou horizontal
+		 * Definir local da palavra
+		 * Calcular tamanho da palavra com o local definido (largura ou altura)
+		 * acrescentar palavra*/
+		
+		for(int i = 0; i < game.length; i++) {
+			
+			//Definindo formato da palavra no grid.
+			
+			String options[] = new String[2];
+			
+			options[0] = "Vertical";
+			options[1] = "Horizontal";
+			
+			int n = options.length;
+			
+			String op = options[random.nextInt(n)];
+			
+			
+			
+		}
 		
 	}
 	

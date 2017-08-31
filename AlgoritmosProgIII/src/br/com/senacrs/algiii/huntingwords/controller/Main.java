@@ -10,6 +10,7 @@ public class Main {
 
 		grid.createGrid();
 		grid.showGrid();
+		grid.addWords();
 		//grid.test();
 		
 	}
