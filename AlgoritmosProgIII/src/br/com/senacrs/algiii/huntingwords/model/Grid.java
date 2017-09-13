@@ -76,11 +76,55 @@ public class Grid {
 			options[0] = "Vertical";
 			options[1] = "Horizontal";
 			
-			int n = options.length;
+			int n;
+			
+			n = options.length;
 			
 			String op = options[random.nextInt(n)];
 			
-			
+			if(op.equals("Vertical")) {
+				
+				n = 25;
+				
+				int line	= random.nextInt(n);
+				int column 	= random.nextInt(n);
+				
+				int numChars = game[i].length();
+				
+				boolean localIsOk = false;
+				
+				while(localIsOk == false) {
+					
+					if(line < numChars) {
+						
+						random.nextInt(n);
+						
+					} else {
+						
+						localIsOk = true;
+						
+					}
+					
+				}
+				
+				int cont = 0;
+				
+				for(int x = line; x < game[i].length(); x++) {
+					
+					char l = game[i].charAt(cont);
+					String lString = Character.toString(l);
+					
+					grid[x][column] = lString;
+					
+					cont++;
+					
+				}
+				
+			} else {
+				
+				dr.print("Teste");
+				
+			}
 			
 		}
 		

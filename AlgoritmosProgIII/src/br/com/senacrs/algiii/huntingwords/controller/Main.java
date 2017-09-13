@@ -9,8 +9,10 @@ public class Main {
 		Grid grid = new Grid();
 
 		grid.createGrid();
+		//grid.showGrid();
+		//grid.addWords();
 		grid.showGrid();
-		grid.addWords();
+		
 		//grid.test();
 		
 	}
