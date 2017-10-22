@@ -1,0 +1,10 @@
+JAVA,3,4,horizontal;
+PHP,;
+PYTHON,44,5,horizontal;
+CSS;
+SQL,25,25,horizontal;
+JAVASCRIPT,4,2,vertical;
+HTML,30,40,horizontal;
+RUBY;
+GO,12,49,horizontal;
+SWIFT;
