@@ -3,8 +3,9 @@ public class Word {
 	private String 	content;
 	private int 	x;
 	private int		y;
+	private String 	direction;
 
-	public void setContent {
+	public void setContent(String content){
 
 		this.content = content;
 
@@ -16,7 +17,7 @@ public class Word {
 
 	}
 
-	public void setX {
+	public void setX(int x){
 
 		this.x = x;
 
@@ -28,7 +29,7 @@ public class Word {
 
 	}
 
-	public void setY {
+	public void setY(int y){
 
 		this.y = y;
 
@@ -37,6 +38,12 @@ public class Word {
 	public String getY(){
 
 		reuturn y;
+
+	}
+
+	public void setDirection(String direction){
+
+		this.direction = direction;
 
 	}
 

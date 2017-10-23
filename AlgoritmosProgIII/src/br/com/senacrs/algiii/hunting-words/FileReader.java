@@ -1,10 +1,9 @@
 
 import java.nio.file.*;
-import Word;
 
 public class FileReader {
 	
-	public Word[] fileReader(){
+	public String[] getWordsData(){
 
 		Path path = Paths.get("Words.txt");
 
@@ -13,26 +12,15 @@ public class FileReader {
 			byte[] text = Files.readAllBytes(path);
 			String words = new String(text);
 
-			Word[] wordsArray = words.split(";");
+			String[] wordsArray = words.split(";");
+
+			return wordsArray;
 
 		} catch(Exception error) {
 
+			System.out.print("Error on the file reading!!!");
 
 		}
-
-		/*Path path = Paths.get("Teste.txt");
-
-		try {
-
-			byte[] text = Files.readAllBytes(path);
-			String reading = new String(text);
-
-			System.out.print(reading);
-
-		} catch(Exception error) {
-
-
-		}*/
 
 	}
 
