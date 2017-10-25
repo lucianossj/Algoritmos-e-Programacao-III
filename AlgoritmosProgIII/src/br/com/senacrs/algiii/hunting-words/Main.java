@@ -6,7 +6,7 @@ public class Main {
 
 		Word[] words = loadWords.loadWords();
 
-		System.out.println(words[0]);
+		
 
 	}
 

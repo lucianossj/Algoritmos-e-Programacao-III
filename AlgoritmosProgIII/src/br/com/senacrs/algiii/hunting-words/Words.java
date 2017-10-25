@@ -8,24 +8,22 @@ public class Words {
 
 		arrayWordsData = fr.getWordsData();
 
-		Word[] words = null;
+		Word[] words = new Word[arrayWordsData.length];
 
-		int cont = 0;
+		String[] allData = new String[arrayWordsData.length];
 
 		for(int i = 0; i < arrayWordsData.length; i++){
 
 			Word word = new Word();
 
-			String[] allData = arrayWordsData[i].split(",");
+			allData = arrayWordsData[i].split(",");
 
 			word.setContent(allData[0]);
 			word.setX(Integer.parseInt(allData[1]));
 			word.setY(Integer.parseInt(allData[2]));
 			word.setDirection(allData[3]);
 
-			words[cont] = word;
-
-			cont++;
+			words[i] = word;
 
 		}
 
