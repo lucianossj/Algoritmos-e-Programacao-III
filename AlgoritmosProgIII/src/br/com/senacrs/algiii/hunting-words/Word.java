@@ -13,7 +13,7 @@ public class Word {
 
 	public String getContent(){
 
-		reuturn content;
+		return content;
 
 	}
 
@@ -23,9 +23,9 @@ public class Word {
 
 	}
 
-	public String getX(){
+	public int getX(){
 
-		reuturn x;
+		return x;
 
 	}
 
@@ -35,15 +35,21 @@ public class Word {
 
 	}
 
-	public String getY(){
+	public int getY(){
 
-		reuturn y;
+		return y;
 
 	}
 
 	public void setDirection(String direction){
 
 		this.direction = direction;
+
+	}
+
+	public String getDirection(){
+
+		return direction;
 
 	}
 

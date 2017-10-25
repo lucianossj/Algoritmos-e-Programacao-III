@@ -20,6 +20,8 @@ public class FileReader {
 
 			System.out.print("Error on the file reading!!!");
 
+			return null;
+
 		}
 
 	}
