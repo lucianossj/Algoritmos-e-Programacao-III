@@ -1,12 +1,12 @@
 public class Main {
 	
+	static Grid grid = new Grid();
+	
 	public static void main(String args[]){
-
-		Words loadWords = new Words();
-
-		Word[] words = loadWords.loadWords();
-
-		
+	
+		grid.createGrid();
+		grid.addWords();
+		grid.showGrid();
 
 	}
 
