@@ -1,11 +1,17 @@
 public class Main {
-	
-	static Grid grid = new Grid();
-	
+		
 	public static void main(String args[]){
-	
-		grid.createGrid();
+
+		FileReader fr = new FileReader();
+
+		Word[] words = null;
+
+		words = fr.getWordsData();
+
+		Grid grid = new Grid(words);
+
 		grid.addWords();
+		grid.createGrid();
 		grid.showGrid();
 
 	}

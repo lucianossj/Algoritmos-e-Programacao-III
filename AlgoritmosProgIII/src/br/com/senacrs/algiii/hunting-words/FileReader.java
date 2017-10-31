@@ -3,18 +3,37 @@ import java.nio.file.*;
 
 public class FileReader {
 	
-	public String[] getWordsData(){
+	public Word[] getWordsData(){
 
 		Path path = Paths.get("Words.txt");
 
 		try {
 
 			byte[] text = Files.readAllBytes(path);
-			String words = new String(text);
+			String wordsData = new String(text); 
 
-			String[] wordsArray = words.split(";");
+			String[] wordsDataArray = wordsData.split(";"); 
 
-			return wordsArray;
+			Word[] words = new Word[wordsDataArray.length]; 
+
+			String[] allData = new String[wordsDataArray.length];
+
+			for(int i = 0; i < wordsDataArray.length; i++){
+
+				Word word = new Word();
+
+				allData = wordsDataArray[i].split(",");
+
+				word.setContent(allData[0]);
+				word.setX(Integer.parseInt(allData[1]));
+				word.setY(Integer.parseInt(allData[2]));
+				word.setDirection(allData[3]);
+
+				words[i] = word;
+
+			}
+
+			return words;
 
 		} catch(Exception error) {
 
