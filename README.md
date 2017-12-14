@@ -1,2 +1,2 @@
-# Algoritmos-e-Programacao-III
-Repositório com códigos de projetos desenvolvidos nas aulas de Algoritmos e Programação III na Faculdade SENAC em Porto Alegre.
+# Hunting Words
+Repositório com códigos do primeiro trabalho da disciplina de Algoritmos e Programação III da Faculdade SENAC Porto Alegre. O trabalho consiste na criação de um grid de Caça-Palavras.
