@@ -1,0 +1,1 @@
+JAVA,3,4,horizontal;PHP,3,19,vertical;PYTHON,4,16,horizontal;CSS,7,5,horizontal;SQL,7,11,horizontal;JAVASCRIPT,2,5,vertical;HTML,6,15,horizontal;RUBY,17,6,horizontal;CSHARP,17,20,horizontal;SWIFT,13,14,vertical;SENAC,13,14,horizontal;FACULDADE,3,13,vertical;
