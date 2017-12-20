@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Grid {
 
-    ArrayList<Word> words = new ArrayList();
+    ArrayList<Word> words = new ArrayList<Word>();
 
     public Grid(ArrayList<Word> words) {
 
@@ -69,7 +69,125 @@ public class Grid {
                     y++;
                     
                 }
+                
+            } else if (words.get(i).getDirection().equals("verticalContrario")) {
+                
+                for (int l = 0; l < words.get(i).getContent().length(); l++) {
+                    
+                    grid[x][y] = Character.toString(lettersChar[indexLetter]);
+
+                    Position pos = new Position();
+
+                    pos.setX(x);
+                    pos.setY(y);
+
+                    unavailablePositions.add(pos);
+
+                    indexLetter++;
+                    x--;
+                    
+                }
+                
+            } else if (words.get(i).getDirection().equals("horizontalContrario")) {
+                
+                for (int l = 0; l < words.get(i).getContent().length(); l++) {
+                    
+                    grid[x][y] = Character.toString(lettersChar[indexLetter]);
+
+                    Position pos = new Position();
+
+                    pos.setX(x);
+                    pos.setY(y);
+
+                    unavailablePositions.add(pos);
+
+                    indexLetter++;
+                    y--;
+                    
+                }
+                
+            } else if (words.get(i).getDirection().equals("diagonal")) {
+                
+                for (int l = 0; l < words.get(i).getContent().length(); l++) {
+                    
+                    grid[x][y] = Character.toString(lettersChar[indexLetter]);
+
+                    Position pos = new Position();
+
+                    pos.setX(x);
+                    pos.setY(y);
+
+                    unavailablePositions.add(pos);
+
+                    indexLetter++;
+                    x++;
+                    y++;
+                    
+                }
+                
+            } else if (words.get(i).getDirection().equals("diagonalContrario")) {
+                
+                for (int l = 0; l < words.get(i).getContent().length(); l++) {
+                    
+                    grid[x][y] = Character.toString(lettersChar[indexLetter]);
+
+                    Position pos = new Position();
+
+                    pos.setX(x);
+                    pos.setY(y);
+
+                    unavailablePositions.add(pos);
+
+                    indexLetter++;
+
+                    x--;
+                    y--;
+                    
+                }
+                
+            } else if (words.get(i).getDirection().equals("diagonalDirEsq")) {
+                
+                for (int l = 0; l < words.get(i).getContent().length(); l++) {
+                    
+                    grid[x][y] = Character.toString(lettersChar[indexLetter]);
+
+                    Position pos = new Position();
+
+                    pos.setX(x);
+                    pos.setY(y);
+
+                    unavailablePositions.add(pos);
+
+                    indexLetter++;
+
+                    x++;
+                    y--;
+                    
+                }
+                
+            } else if (words.get(i).getDirection().equals("diagonalDirEsqContrario")) {
+                
+                for (int l = 0; l < words.get(i).getContent().length(); l++) {
+                    
+                    grid[x][y] = Character.toString(lettersChar[indexLetter]);
+
+                    Position pos = new Position();
+
+                    pos.setX(x);
+                    pos.setY(y);
+
+                    unavailablePositions.add(pos);
+
+                    indexLetter++;
+
+                    x--;
+                    y++;
+                    
+                }
+                
             }
+            
+            
         }
 
     }

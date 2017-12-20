@@ -7,14 +7,11 @@ public class Main {
 
         FileReader fr = new FileReader();
 
-        ArrayList<Word> words = new ArrayList();
+        ArrayList<Word> words = new ArrayList<Word>();
 
         words = fr.getWordsData();
 
         Grid grid = new Grid(words);
-
-        //grid.addWords();
-        //grid.createGrid();
         
         grid.showGrid();
         

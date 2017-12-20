@@ -17,7 +17,7 @@ public class FileReader {
             
             String[] wordsDataArray = wordsData.split(";");
 
-            ArrayList<Word> words = new ArrayList();
+            ArrayList<Word> words = new ArrayList<Word>();
             
             String[] allData;
 

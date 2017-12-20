@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Words {
 
-    ArrayList<Word> arrayWordsData = new ArrayList();
+    ArrayList<Word> arrayWordsData = new ArrayList<Word>();
 
     public ArrayList<Word> loadWords() {
 
@@ -11,11 +11,9 @@ public class Words {
 
         arrayWordsData = fr.getWordsData();
 
-        //Word[] words = new Word[arrayWordsData.length];
-        ArrayList<Word> words = new ArrayList();
+        ArrayList<Word> words = new ArrayList<Word>();
 
         String[] allData = new String[arrayWordsData.size()];
-        //ArrayList<String> allData = new ArrayList();
         
         for (int i = 0; i < arrayWordsData.size(); i++) {
 
